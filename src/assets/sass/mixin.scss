@@ -11,7 +11,7 @@
 }
 
 @mixin mobileXl {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 640px) {
         @content;
     }
 }
@@ -38,4 +38,15 @@
     @media screen and (max-width: 1920px) {
         @content;
     }
+}
+
+$bgCol: rgba(54, 81, 155, 0.6);
+
+@mixin hatter($url, $rep, $size, $pos, $baccol, $blend) {
+    background-image: url($url);
+    background-repeat: $rep;
+    background-size: $size;
+    background-position: $pos;
+    background-color: $baccol;
+    background-blend-mode: $blend;
 }

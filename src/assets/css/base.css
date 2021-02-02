@@ -57,8 +57,41 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background: url("/images/blue1920.png") no-repeat;
-  background-size: cover;
-  background-position: 50% 20%;
+@media screen and (max-width: 1920px) {
+  body {
+    background-image: url("/images/blue1920.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-color: rgba(54, 81, 155, 0.6);
+    background-blend-mode: darken;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-image: url("/images/blue1280.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-color: rgba(54, 81, 155, 0.6);
+    background-blend-mode: darken;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-position: 50% 25%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-image: url("/images/blue640.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-color: rgba(54, 81, 155, 0.6);
+    background-blend-mode: darken;
+  }
 }

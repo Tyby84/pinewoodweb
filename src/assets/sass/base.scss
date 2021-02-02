@@ -3,9 +3,19 @@
 
 #app {
     
-}
+} 
 body {
-    background: url('/images/blue1920.png') no-repeat;
-    background-size: cover;
-    background-position: 50% 20%;
+    @include screen {
+        @include hatter('/images/blue1920.png', no-repeat, cover ,50% 20%, $bgCol, darken);
+    }
+    @include laptopXs {
+        @include hatter('/images/blue1280.png', no-repeat, cover ,50% 20%, $bgCol, darken);
+    }
+    @include tablet {
+        background-position: 50% 25%;
+    }
+    @include mobileXl {
+        @include hatter('/images/blue640.png', no-repeat, cover ,50% 20%, $bgCol, darken);
+    }
+    
 }
