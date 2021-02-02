@@ -1,0 +1,11 @@
+@import '../../../node_modules/reset-css/sass/reset';
+@import 'mixin.scss';
+
+#app {
+    
+}
+body {
+    background: url('/images/blue1920.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+}
