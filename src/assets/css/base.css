@@ -73,7 +73,7 @@ table {
     background-image: url("/images/blue1280.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 20%;
+    background-position: 50% 15%;
     background-color: rgba(54, 81, 155, 0.6);
     background-blend-mode: darken;
   }
@@ -81,16 +81,21 @@ table {
 
 @media screen and (max-width: 1000px) {
   body {
-    background-position: 50% 25%;
+    background-image: url("/images/bluestand.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 60% 0%;
+    background-color: rgba(54, 81, 155, 0.6);
+    background-blend-mode: darken;
   }
 }
 
 @media screen and (max-width: 640px) {
   body {
-    background-image: url("/images/blue640.png");
+    background-image: url("/images/bluestand.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 20%;
+    background-size: auto;
+    background-position: 75% 25%;
     background-color: rgba(54, 81, 155, 0.6);
     background-blend-mode: darken;
   }

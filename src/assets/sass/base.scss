@@ -9,13 +9,13 @@ body {
         @include hatter('/images/blue1920.png', no-repeat, cover ,50% 20%, $bgCol, darken);
     }
     @include laptopXs {
-        @include hatter('/images/blue1280.png', no-repeat, cover ,50% 20%, $bgCol, darken);
+        @include hatter('/images/blue1280.png', no-repeat, cover ,50% 15%, $bgCol, darken);
     }
     @include tablet {
-        background-position: 50% 25%;
+        @include hatter('/images/bluestand.png', no-repeat, auto ,60% 0%, $bgCol, darken);
     }
     @include mobileXl {
-        @include hatter('/images/blue640.png', no-repeat, cover ,50% 20%, $bgCol, darken);
+        @include hatter('/images/bluestand.png', no-repeat, auto ,75% 25%, $bgCol, darken);
     }
     
 }

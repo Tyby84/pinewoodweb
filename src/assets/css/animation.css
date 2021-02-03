@@ -1,0 +1,23 @@
+@-webkit-keyframes movedown {
+  100% {
+    top: 130px;
+  }
+}
+
+@keyframes movedown {
+  100% {
+    top: 130px;
+  }
+}
+
+@-webkit-keyframes moveup {
+  100% {
+    top: 75px;
+  }
+}
+
+@keyframes moveup {
+  100% {
+    top: 75px;
+  }
+}

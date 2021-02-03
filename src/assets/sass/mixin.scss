@@ -50,3 +50,9 @@ $bgCol: rgba(54, 81, 155, 0.6);
     background-color: $baccol;
     background-blend-mode: $blend;
 }
+@mixin imageIcon($width, $pos, $top, $left) {
+    width: $width;
+    position: $pos;
+    top: $top;
+    left: $left;
+}

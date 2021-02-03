@@ -1,24 +1,77 @@
 @import 'mixin.scss';
+@import 'animation.scss';
 .menu {
-    
-    img.about {
+    img.about {  
         @include screen {
-        display: block;
-        width: 100px;
-        border-radius: 50%;
-        margin: 150px auto auto 25px;
+            display: block;
+            border-radius: 50%;
+            @include imageIcon(100px, absolute, 150px, 55px);
+            animation: movedown 3s ease-in-out 1s infinite alternate forwards;
+        }
+        @include laptop {
+           // @include imageIcon(90px, 100px auto auto 55px);
+           @include imageIcon(90px, absolute, 100px, 55px);
+           }
+        @include laptopXs {
+           // @include imageIcon(80px, 150px auto auto 55px);
+           @include imageIcon(80px, absolute, 150px, 55px);   
+        }
+        @include tablet {
+           // @include imageIcon(80px, 120px auto auto 55px);
+           @include imageIcon(80px, absolute, 120px, 55px);   
+        }
+        @include mobileXl {
+            //@include imageIcon(50px, 40px auto auto 25px);
+            @include imageIcon(50px, absolute, 40px, 25px);
+        }
+    }
+    img.work {
+        @include screen {
+            display: block;
+            border-radius: 50%;
+           // @include imageIcon(100px, 0 auto 80px 55px);  
+            @include imageIcon(100px, absolute, 55px, 210px);
+            animation: moveup 3s ease-in-out 2s infinite alternate forwards;  
+        }
         @include laptop {
             width: 90px;
-            margin: 100px auto auto 25px;   
         }
         @include laptopXs {
             width: 80px;
-            margin: 80px auto auto 25px;   
         }
         @include mobileXl {
-            width: 50px;
-            margin: 40px auto auto 20px;   
+           // @include imageIcon(50px, 0 auto 30px 25px);
+           @include imageIcon(50px, absolute, 10px, 100px);   
         }
     }
-}
+    img.contact {
+        @include screen {
+            display: block;
+            border-radius: 50%;
+            @include imageIcon(100px, absolute ,150px, 365px);
+            animation: movedown 3s ease-in-out 3s infinite alternate forwards;  
+        }
+        @include laptop {
+           // @include imageIcon(90px, 100px auto auto 55px);
+           @include imageIcon(90px, absolute ,100px, 365px);
+           }
+        @include laptopXs {
+           // @include imageIcon(80px, 150px auto auto 55px);
+           @include imageIcon(80px, absolute ,150px, 365px);   
+        }
+        @include tablet {
+           // @include imageIcon(80px, 120px auto auto 55px);
+           @include imageIcon(80px, absolute ,120px, 365px);   
+        }
+        @include mobileXl {
+           // @include imageIcon(50px, 40px auto auto 25px);
+           @include imageIcon(50px, absolute ,40px, 175px);
+        }
+    }
+    img {
+        cursor: pointer;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }
